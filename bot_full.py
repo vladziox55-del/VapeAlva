@@ -29,8 +29,8 @@ from telebot import types
 # --------- CONFIG --------------
 # ===============================
 
-TOKEN = os.getenv("8400828602:AAGmF8japcI3YkWRmvd2o9QXoohcYc4I7vQ", "8400828602:AAGmF8japcI3YkWRmvd2o9QXoohcYc4I7vQ")  # <- replace or set env var
-ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID", "5539798707"))     # <- replace with your Telegram user id
+TOKEN = os.getenv("TELEGRAM_TOKEN")  # <- сюда подтянется твой токен из переменной окружения
+ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID", "0"))  # <- сюда подтянется твой Telegram ID
 
 # Payment/Refl thresholds
 REF_REWARD_THRESHOLD = 4100
